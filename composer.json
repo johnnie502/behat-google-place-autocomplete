@@ -5,8 +5,8 @@
   "license": "MIT",
   "require": {
     "behat/behat": "^3.0",
-    "medology/flexible-mink": "dev-master",
-    "behat/mink-extension": "^2.0",
+    "medology/flexible-mink": "dev-experiment",
+    "behat/mink-extension": "dev-experiment",
     "symfony/config": "~2.8"
   },
   "require-dev":{
@@ -17,5 +17,15 @@
     "psr-4": {
       "Medology\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/johnnie502/FlexibleMink"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/johnnie502/MinkExtension"
+    }
+  ]
 }
