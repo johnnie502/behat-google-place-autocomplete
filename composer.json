@@ -1,13 +1,13 @@
 {
-  "name": "medology/behat-google-place-autocomplete",
+  "name": "johnnie502/behat-google-place-autocomplete",
   "type": "behat-extension",
   "description": "Mink extension for Google Place Autocomplete",
   "license": "MIT",
   "require": {
     "behat/behat": "^3.0",
-    "medology/flexible-mink": "dev-master",
     "behat/mink-extension": "^2.0",
-    "symfony/config": "~2.8"
+    "symfony/config": "~2.8",
+    "johnnie502/flexible-mink": "dev-master"
   },
   "require-dev":{
     "vlucas/phpdotenv": "^2.3",
@@ -17,5 +17,11 @@
     "psr-4": {
       "Medology\\": "src/"
     }
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/johnnie502/FlexibleMink"
+    }
+  ]
 }
