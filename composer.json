@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "behat/behat": "^3.0",
-    "medology/flexible-mink": "dev-master",
+    "johnnie502/flexible-mink": "dev-master",
     "behat/mink-extension": "^2.0",
     "symfony/config": "~2.8"
   },
@@ -17,5 +17,19 @@
     "psr-4": {
       "Medology\\": "src/"
     }
-  }
+  },
+  "repositories": [
+      {
+      "type":"package",
+      "package": {
+        "name": "johnnie502/flexible-mink",
+        "version":"master",
+        "source": {
+          "url": "https://github.com/johnnie502/FlexibleMink.git",
+          "type": "git",
+          "reference":"master"
+        }
+      }
+    }
+  ]
 }
